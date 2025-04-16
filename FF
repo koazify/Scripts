@@ -1,3 +1,14 @@
+-- Player shit
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+
+-- Varibles --
+local playerCharacter = localPlayer.Character
+local camera = workspace.CurrentCamera
+local playerMouse = localPlayer:GetMouse()
+local userInputService = game:GetService("UserInputService")
+local debrisService = game:GetService("Debris")
+
 function setupFlingMechanics()
     local humanoidRootPart = playerCharacter:WaitForChild("HumanoidRootPart")
     local humanoid = playerCharacter:WaitForChild("Humanoid")
